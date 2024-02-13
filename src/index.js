@@ -49,3 +49,7 @@ fileStore(
   fileLinks,
   "/home/aditya/Documents/programs/file-storage-program/outputFiles"
 );
+
+process.on("beforeExit", ()=> {
+  process.stdout.write("File storing completed in the output directory\n")
+})
